@@ -22,7 +22,8 @@
         "tsBuildInfoFile": ".tsbuildinfo",
         "lib": [
             "esnext"
-        ]
+        ],
+        "skipLibCheck": true
     },
     "include": [
         "src/**/*"

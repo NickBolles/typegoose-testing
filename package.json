@@ -13,6 +13,7 @@
   "scripts": {
     "start": "npm run build && npm run run",
     "run:directly": "ts-node ./src/test.ts",
+    "run:deug": "node --inspect-brk -r ts-node/register ./src/test.ts",
     "run": "npm run build && node lib/test.js",
     "watch": "tsc -w",
     "build": "tsc",
@@ -38,6 +39,7 @@
   "dependencies": {
     "@typegoose/typegoose": "^6.1.0-7",
     "@types/lodash": "^4.14.144",
+    "apollo-server": "^2.9.7",
     "debug": "^4.1.1",
     "graphql": "^14.5.8",
     "lodash": "^4.17.15",
